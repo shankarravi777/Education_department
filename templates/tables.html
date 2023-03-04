@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Educational Department Tracking</title>
+</head>
+<body>
+ 
+    <h1>Educational list</h1>
+    
+    {% for row in rows %}
+    <p>Educational: 
+       <b>{{row["Departmental_Family"]}}</b> | 
+        {{ row["Date"]}} |
+        {{ row["Supplier"]}} |
+        {{ row["Transaction_Number"]}}  |  
+       {{row['Amount']}}	
+    </p>
+    {% endfor %}
+</body>
+</html>
+
+ 
